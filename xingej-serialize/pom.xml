@@ -23,5 +23,14 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!--XStream 序列化-->
+	<dependency>
+	    <groupId>com.thoughtworks.xstream</groupId>
+	    <artifactId>xstream</artifactId>
+	    <version>1.4.9</version>
+	</dependency>
+    
+    
   </dependencies>
 </project>
