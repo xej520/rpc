@@ -11,7 +11,8 @@ public class XMLSerializer implements ISerializer {
 
 	@Override
 	public <T> byte[] serialize(T obj) {
-		return XStream.toXML(obj).getBytes();
+		String objStr = XStream.toXML(obj);
+		return objStr.getBytes();
 	}
 
 	@SuppressWarnings("unchecked")
@@ -21,5 +22,4 @@ public class XMLSerializer implements ISerializer {
 		String xml = new String(data);
 		return (T) XStream.fromXML(xml);
 	}
-
 }

@@ -30,6 +30,14 @@
 	    <artifactId>xstream</artifactId>
 	    <version>1.4.9</version>
 	</dependency>
+	
+	<!--fastjson -->
+	<dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>fastjson</artifactId>
+	    <version>1.2.32</version>
+	</dependency>
+	
     
     
   </dependencies>
