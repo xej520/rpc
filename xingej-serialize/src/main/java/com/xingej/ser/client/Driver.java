@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
 import com.xingej.ser.ISerializer;
 import com.xingej.ser.impl.DefaultJavaSerializer;
 import com.xingej.ser.impl.Fastjson2Serialize;
+import com.xingej.ser.impl.HessianSerializer;
 import com.xingej.ser.impl.XMLSerializer;
 
 /**
@@ -17,7 +18,8 @@ import com.xingej.ser.impl.XMLSerializer;
 public class Driver {
 	public static void main(String[] args) {
 		// testXMLser();
-		testFastJSON();
+		// testFastJSON();
+		testHessianSer();
 	}
 
 	private static void testJavaDefaultSer() {
@@ -64,6 +66,20 @@ public class Driver {
 			System.out.println("key=\t" + entry.getKey() + "; value=\t" + entry.getValue());
 		}
 
+	}
+
+	private static void testHessianSer() {
+		HessianSerializer hessianSerializer = new HessianSerializer();
+
+		String name = "mesos";
+
+		// 序列化
+		byte[] nameByte = hessianSerializer.serialize(name);
+
+		// 反序列化
+		Object object = hessianSerializer.deserialize(nameByte, String.class);
+
+		System.out.println("---序列化--->:\t" + object);
 	}
 
 }
