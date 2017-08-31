@@ -1,4 +1,4 @@
-package com.xingej.rpc.ser.impl;
+package com.xingej.rpc.serialize.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import com.xingej.rpc.ser.ISerializer;
+import com.xingej.rpc.serialize.ISerializer;
 
 public class DefaultJavaSerializer implements ISerializer {
 

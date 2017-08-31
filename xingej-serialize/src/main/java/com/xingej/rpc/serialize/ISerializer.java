@@ -1,4 +1,4 @@
-package com.xingej.rpc.ser;
+package com.xingej.rpc.serialize;
 
 public interface ISerializer {
 	public <T> byte[] serialize(T obj);

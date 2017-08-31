@@ -1,7 +1,7 @@
-package com.xingej.rpc.ser.impl;
+package com.xingej.rpc.serialize.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.xingej.rpc.ser.ISerializer;
+import com.xingej.rpc.serialize.ISerializer;
 
 public class Fastjson2Serialize implements ISerializer {
 

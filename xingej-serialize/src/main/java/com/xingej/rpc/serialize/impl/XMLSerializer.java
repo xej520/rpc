@@ -1,8 +1,8 @@
-package com.xingej.rpc.ser.impl;
+package com.xingej.rpc.serialize.impl;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
-import com.xingej.rpc.ser.ISerializer;
+import com.xingej.rpc.serialize.ISerializer;
 
 public class XMLSerializer implements ISerializer {
 
