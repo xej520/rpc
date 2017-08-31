@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.xingej.ser</groupId>
-  <artifactId>xingej-serialize</artifactId>
+  <artifactId>xingej-rpc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>xingej-serialize</name>
+  <name>xingej-rpc</name>
   <url>http://maven.apache.org</url>
 
   <properties>

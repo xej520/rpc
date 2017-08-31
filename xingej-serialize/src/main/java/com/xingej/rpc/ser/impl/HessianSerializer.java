@@ -1,4 +1,4 @@
-package com.xingej.ser.impl;
+package com.xingej.rpc.ser.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
-import com.xingej.ser.ISerializer;
+import com.xingej.rpc.ser.ISerializer;
 
 public class HessianSerializer implements ISerializer {
 
